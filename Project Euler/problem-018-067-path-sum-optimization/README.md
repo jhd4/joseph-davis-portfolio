@@ -24,4 +24,4 @@ The solver is designed to handle any triangle data file, regardless of size.
 
 ```bash
 g++ pe018-path-sum-i.cpp -o path_solver
-./path_solver triangle_data.txt
+./path_solver 0018_triangle.txt

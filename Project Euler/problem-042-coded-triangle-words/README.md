@@ -17,4 +17,4 @@ The sequence begins: $1, 3, 6, 10, 15, 21, 28, 36, 45, 55, ...$
 ### 🚀 Usage
 ```bash
 g++ pe042-triangle-words.cpp -o triangle_word_counter
-./triangle_word_counter words.txt
+./triangle_word_counter 0042_words.txt

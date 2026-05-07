@@ -1,7 +1,3 @@
-//
-// Created by 4jose on 4/13/2026.
-//
-
 #include <fstream>
 using std::ifstream;
 #include <sstream>
