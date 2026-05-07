@@ -1,7 +1,4 @@
-//
-// Created by 4jose on 4/11/2026.
-//
-#include "prime_finder.h"
+#include "../utils/prime_finder.h"
 #include <iostream>
 using std::cout, std::endl;
 
