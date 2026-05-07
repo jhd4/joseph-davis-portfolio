@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/tone"></script>
+    <script src="main.js"></script>
+    <script src="music-measure.js"></script>
+    <script src="music-moment.js"></script>
+    <script src="bar-staff.js"></script>
+    <script src="collision-box.js"></script>
+    <script src="note-instance.js"></script>    
+    <link rel = 'stylesheet' href = 'style.css'>
+  </head>
+  <body>
+    
+    <center>
+        <button id="play">Play</button>
+      <span>Mode:</span><select name="mode" id="mode">
+        <option value="insert">Insert</option>
+        <option value="remove">Remove</option>
+      </select>
+      <span>Note Duration:</span><select name="duration" id="duration">
+        <option value="1">Quarter Note</option>
+        <option value="1.5">Dotted Quarter Note</option>
+        <option value="2">Half Note</option>
+        <option value="3">Dotted Half Note</option>
+        <option value="4">Whole Note</option>
+      </select>
+      <br>
+      <button id="save_file">Save File</button>
+      <button id="upload_file">Upload File</button>
+      <input type="file" id="fileInput" style="display: none;">
+      <br>
+      <br>
+      <canvas id = 'music_sheet'></canvas>
+    </center>
+    <script>//All playing of audio must happen inside of this script tag. Other calculations and fun things can go in other js scripts
+      document.getElementById("play")?.addEventListener("click", async () => {
+        await Tone.start();
+        Tone.Transport.cancel(0);
+        console.log("audio is ready");
+        let staff_list = import_staff_list();
+        //a polysynth composed of 6 Voices of Synth
+        // Create a polyphonic synth with 6 voices
+        const synth = new Tone.PolySynth(Tone.Synth, {
+          maxPolyphony: 6,
+          // Optional: set envelope or other defaults for each voice
+          envelope: {
+            attack: 0.1,
+            decay: 0.2,
+            sustain: 0.5,
+            release: 1
+          }
+        }).toDestination();
+        const quarter_note_duration = 0.25;
+        const moments_per_quarter_note = 2;
+        let moment_index = 0;
+        for(let i = 0; i < staff_list.length; i++) {//loop through all staffs
+          let bar_staff = staff_list[i];
+          for(let j = 0; j < bar_staff.measures.length; j++) {//loop through all measures
+            let measure = bar_staff.measures[j];
+            for(let k = 0; k < measure.moments.length; k++) {//loop through all moments
+              let moment = measure.moments[k];
+              for(let l = 0; l < moment.note_list.length; l++) {//schedule each note to be played
+                let note = moment.note_list[l];
+                Tone.Transport.schedule(time => {
+                  synth.triggerAttackRelease(note.tag, note.duration * quarter_note_duration, time);
+                }, `+${moment_index * quarter_note_duration / moments_per_quarter_note}`);
+              }
+              moment_index++;
+            }
+          }
+        }
+
+        // Play a chord
+        
+        Tone.Transport.start();
+        // synth.triggerAttackRelease("C4", "4n");
+        // synth.triggerAttackRelease("D4", "8n", "+2");
+        // const synth = new Tone.Synth().toDestination();
+        // synth.triggerAttackRelease("E4", 1);
+      });
+    </script>
+  </body>
+</html>
