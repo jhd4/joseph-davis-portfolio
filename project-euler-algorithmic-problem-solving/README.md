@@ -14,7 +14,7 @@ A collection of high-performance C++ solutions for [Project Euler](https://proje
 * **`/problem-006-sum-square-difference`**: Optimized calculation of sum-square differences using arithmetic series logic.
 * **`/problem-011-grid-product-search`**: A linear scan algorithm that identifies the greatest product of four adjacent numbers in a 20x20 grid (horizontal, vertical, and diagonal).
 * **`/problem-018-067-path-sum-optimization`**: Solving triangle path constraints using a bottom-up dynamic programming approach to find the maximum sum from top to bottom.
-* **`/problem-042-coded-triangle-words`**: Converts words to numerical values and checks them against a generated sequence of triangle numbers ($t_n = \frac{1}{2}n(n+1)$).
+* **`/problem-042-coded-triangle-words`**: Converts words to numerical values and checks them against a generated sequence of triangle numbers (tₙ = ½n(n+1)).
 * **`/problem-046-goldbach-conjecture-verification`**: A computational search for the smallest odd composite number that contradicts Goldbach's other conjecture by checking $n = p + 2k^2$.
 * **`/problem-050-consecutive-prime-sum`**: Identifying the prime below one million that can be written as the sum of the most consecutive primes using $O(N \log \log N)$ pre-computation.
 
