@@ -26,7 +26,7 @@ Each problem folder is self-contained. To compile a solution while linking the s
 ```bash
 # Example for Problem 50
 # Navigate to the problem folder first, then run:
-g++ pe050-prime-sum-series.cpp -I../utils -o prime_sum_solver
+g++ pe050-prime-sum-series.cpp -o prime_sum_solver
 
 # Run the executable
 ./prime_sum_solver 1000000
