@@ -14,10 +14,22 @@ public:
     }
 
     bool is_prime(size_t n) {
+        populate_primes_up_through(n);
+        return binary_search(primes_found, n);
+    }
+
+    void populate_primes_up_through(size_t n) {
         while (n > primes_found.at(primes_found.size() - 1)) {
             get_next_prime();
         }
-        return binary_search(primes_found, n);
+    }
+
+    size_t operator[](size_t index) {
+        return primes_found.at(index);
+    }
+
+    int size() {
+        return primes_found.size();
     }
 
 private:

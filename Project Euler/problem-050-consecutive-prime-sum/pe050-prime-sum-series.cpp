@@ -1,5 +1,4 @@
-
-#include "prime_finder.h"
+#include "../utils/prime_finder.h"
 #include <iostream>
 using std::cout, std::cerr, std::endl, std::stoi;
 
@@ -37,6 +36,5 @@ int main(int argc, char *argv[]) {
         upper_threshold = stoi(argv[1]);
     }
     prime_finder finder;
-    finder.populate_primes_up_through(upper_threshold);
-    cout << finder.get_prime_sum_of_primes_with_most_terms(upper_threshold) << endl;
+    cout << get_prime_sum_of_primes_with_most_terms(finder, upper_threshold) << endl;
 }
