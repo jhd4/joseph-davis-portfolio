@@ -21,9 +21,12 @@ A collection of high-performance C++ solutions for [Project Euler](https://proje
 ---
 
 ### 🚀 Usage & Compilation
-Each problem folder is self-contained. To compile a solution with the shared utilities:
+Each problem folder is self-contained. To compile a solution while linking the shared utilities in the `utils/` directory, use the `-I` include flag:
 
 ```bash
 # Example for Problem 50
-g++ pe050-prime-sum-series.cpp -o prime_sum_solver
+# Navigate to the problem folder first, then run:
+g++ pe050-prime-sum-series.cpp -I../utils -o prime_sum_solver
+
+# Run the executable
 ./prime_sum_solver 1000000
