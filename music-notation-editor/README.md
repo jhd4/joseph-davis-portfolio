@@ -2,6 +2,8 @@
 
 A web-based, object-oriented music editor that allows users to visually compose, play, and save musical scores. This project utilizes a custom collision-detection engine and the **Tone.js** library to bridge visual interaction with real-time audio synthesis.
 
+[![Live Demo](https://img.shields.io/badge/demo-live_site-brightgreen)](https://jhd.neocities.org/music-notation-editor/)
+
 ### 🎼 Key Technical Features
 * **Hierarchical Object Architecture:** Managed complex state through a nested data model: `BarStaff` → `MusicMeasure` → `MusicMoment` → `NoteInstance`.
 * **Custom Collision Engine:** Developed a `Collision_Box` utility class to handle coordinate mapping between mouse events and musical staff locations, covering a pitch range from G2 to G5.
