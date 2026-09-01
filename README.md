@@ -6,6 +6,11 @@ I specialize in the intersection of theoretical mathematical structures and comp
 
 ### 🚀 Featured Projects
 
+* **[Computational Permutation Group Explorer](https://github.com/jhd4/joseph-davis-portfolio/tree/main/computational-group-theory)**[cite: 1, 6]
+  * A Python library for modeling finite group theory, disjoint cycle canonicalization, and algebraic closure algorithms[cite: 2, 3, 4, 6].
+  * **Highlights:** Engineered a 3-layer OOD architecture (`Cycle` $\rightarrow$ `Permutation` $\rightarrow$ `Permutation_Group`) using extensional equality to search generator sets and enumerate subgroups of $S_5$[cite: 1, 2, 3, 4, 6].
+  * **Tech:** Python, Abstract Algebra, Combinatorics, Object-Oriented Design[cite: 1, 2, 3, 4, 6].
+
 * **[Project Euler: Algorithmic Problem Solving](https://github.com/jhd4/joseph-davis-portfolio/tree/main/project-euler-algorithmic-problem-solving)**
   * A collection of high-performance C++ solutions for complex mathematical challenges.
   * **Highlights:** Developed a modular `utils/` library featuring a JIT prime finder and binary search optimizations.
