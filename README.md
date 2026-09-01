@@ -2,7 +2,7 @@
 
 **Applied Math Student (BYU ACME)** | **Research Assistant to Dr. CJ Bott (Algebraic Geometry)** [LinkedIn](https://www.linkedin.com/in/joseph--h--davis)
 
-I specialize in the intersection of theoretical mathematical structures and computational software engineering. This profile serves as a portfolio of my work in algorithmic problem solving and interactive web-based tools.
+I focus on theoretical mathematical structures and symbolic computation. This profile showcases my work in computer algebra systems, algorithmic number theory, and exact algebraic computations, complemented by projects in performant C++ and software engineering.
 
 ### 🚀 Featured Projects
 
