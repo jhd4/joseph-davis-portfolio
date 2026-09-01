@@ -11,6 +11,11 @@ I specialize in the intersection of theoretical mathematical structures and comp
   * **Highlights:** Engineered a 3-layer OOD architecture (`Cycle` $\rightarrow$ `Permutation` $\rightarrow$ `Permutation_Group`) using extensional equality to search generator sets and enumerate subgroups of $S_5$.
   * **Tech:** Python, Abstract Algebra, Combinatorics, Object-Oriented Design.
 
+* **[Euclidean & Extended Euclidean Algorithms](https://github.com/jhd4/joseph-davis-portfolio/tree/main/euclidean-algorithms)**
+  * CLI C++ implementations of number-theoretic algorithms for GCD computation and computing Bézout coefficients.
+  * **Highlights:** Engineered the extended algorithm using reference-to-array signatures (`int (&)[N]`) for compile-time buffer safety and iterative state cycling to compute Bézout coefficients ($ax + by = \gcd(a, b)$).
+  * **Tech:** C++, Number Theory, Memory Management, CLI Applications.
+
 * **[Project Euler: Algorithmic Problem Solving](https://github.com/jhd4/joseph-davis-portfolio/tree/main/project-euler-algorithmic-problem-solving)**
   * A collection of high-performance C++ solutions for complex mathematical challenges.
   * **Highlights:** Developed a modular `utils/` library featuring a JIT prime finder and binary search optimizations.
