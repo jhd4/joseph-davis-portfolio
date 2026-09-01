@@ -6,6 +6,11 @@ I specialize in the intersection of theoretical mathematical structures and comp
 
 ### 🚀 Featured Projects
 
+* **[Computing Gröbner Bases in Julia](https://github.com/jhd4/joseph-davis-portfolio/tree/main/computing-groebner-bases)**
+  * Custom implementation of multivariate polynomial division and Buchberger's algorithm using Julia and Oscar.jl.
+  * **Highlights:** Implemented term-ordering monomial division, S-polynomial (syzygy) generation, and reduced Gröbner basis extraction, validating algebraic output against Oscar's native ideal solver.
+  * **Tech:** Julia, Oscar.jl, Computational Algebra, Gröbner Bases, Computer Algebra Systems.
+
 * **[Computational Permutation Group Explorer](https://github.com/jhd4/joseph-davis-portfolio/tree/main/computational-group-theory)**
   * A Python library for modeling finite group theory, disjoint cycle canonicalization, and algebraic closure algorithms.
   * **Highlights:** Engineered a 3-layer OOD architecture (`Cycle` $\rightarrow$ `Permutation` $\rightarrow$ `Permutation_Group`) using extensional equality to search generator sets and enumerate subgroups of $S_5$.
